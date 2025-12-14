@@ -514,6 +514,31 @@
       background-color: #FFD700;
     }
 
+    /* Disabled state for toggle switch */
+    .public-toggle .toggle-switch input:disabled + .slider {
+      cursor: not-allowed;
+      background-color: #1a1a1a;
+      opacity: 0.5;
+    }
+
+    .public-toggle .toggle-switch input:disabled + .slider:before {
+      background-color: #444;
+    }
+
+    .public-toggle .toggle-switch input:disabled:checked + .slider {
+      background-color: rgba(255, 215, 0, 0.1);
+    }
+
+    .public-toggle .toggle-switch input:disabled:checked + .slider:before {
+      background-color: #666;
+    }
+
+    /* Disable label text when toggle is disabled */
+    .public-toggle:has(input:disabled) .toggle-label {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
     /* Pause Menu */
     #pause-menu {
       position: absolute;
@@ -2186,7 +2211,7 @@
       font-size: 14px;
     }
   </style>
-  <script type="module" crossorigin src="./assets/index-BKku5IAE.js"></script>
+  <script type="module" crossorigin src="./assets/index-B0v2eplt.js"></script>
 </head>
 <body>
   <div id="game-container">
